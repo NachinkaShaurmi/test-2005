@@ -1,5 +1,36 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ccc;
+}
+
+input, button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  outline: none;
 }
