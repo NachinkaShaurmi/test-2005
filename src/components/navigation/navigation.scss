@@ -14,6 +14,7 @@
     flex-wrap: wrap;
   }
   &__element {
+    min-width: 76px;
     padding: 6px;
     transition: .6s;
     color: #444;
