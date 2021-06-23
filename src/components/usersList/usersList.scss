@@ -1,0 +1,37 @@
+.users {
+  margin-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  height: calc(100vh - 45px -2rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__filter {
+    font-size: 3rem;
+    padding: 0 0 2px 1rem;
+    align-self: flex-start;
+  }
+
+  &__input {
+    margin: 1rem;
+    background-color: azure;
+    width: 300px;
+    border-radius: 10px;
+    // font-size: 3rem;
+    padding: 0 0 2px 1rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
