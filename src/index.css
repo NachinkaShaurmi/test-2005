@@ -34,3 +34,14 @@ input, button {
   letter-spacing: inherit;
   outline: none;
 }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 7px;
+  }
+}

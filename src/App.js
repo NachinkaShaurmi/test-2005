@@ -1,25 +1,17 @@
 import { Switch, BrowserRouter, Route, Redirect } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { getUserName } from "./redux/selectors";
 import "./App.scss";
-import Header from "./components/header/Header";
-import MainPage from "./components/mainPage/MainPage";
-import Profile from "./components/profile/Profile";
+import Navigation from "./components/navigation/Navigation";
 import Login from "./components/login/Login"
+import UserList from "./components/usersList/UsersList"
 
 function App() {
-  const isAuth = useSelector(getUserName);
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+        <Navigation />
         <Switch>
-          <Route render={() => <MainPage />} path="/" exact />
-          <Route render={() => <Login />} path="/login" />
-          <Route
-            render={() => (isAuth ? <Profile /> : <Redirect to="/login" />)}
-            path="/profile"
-          />
+          <Route render={() => <Login />} path="/" exact />
+          <Route render={() => <UserList />} path="/users" />
           <Route path="*" render={() => <Redirect to="/" />} />
         </Switch>
       </div>
