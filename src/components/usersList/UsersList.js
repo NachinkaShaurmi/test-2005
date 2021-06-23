@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import User from "../user/User";
 import Loader from "../loader/Loader";
+import MockUsers from "../../assets/data"
 import "./usersList.scss";
 
 const UsersList = () => {
@@ -19,7 +20,10 @@ const UsersList = () => {
       .then((data) => {
         setUsers(data);
       })
-      .catch((err) => console.log(err.message));
+      .catch((err) => {
+        console.log(err.message);
+        setUsers(MockUsers);
+      })
   }, []);
     
   useEffect(() => {
